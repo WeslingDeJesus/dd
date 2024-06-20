@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url(../Fuentes/ds_digital/DS-DIGI.TTF) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background: url(../Imagenes/fondo.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    position: relative;
+    top: 20px;
+    margin: 30px 300px;
+}
+.clock{
+    font-size: 200px;
+    font-weight:500;
+    font-family: 'DS-Digital', sans-serif;
+    background: linear-gradient(to bottom, #24ff0c, #98ff98, #c1fac1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.content{
+    display: flex;
+    position: relative;
+    top: 250px;
+    right: 650px;
+}
+.content h3{
+    font-family:'Poppins';
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+}
+.input-transparent{
+    font-family: 'DS-Digital', sans-serif;
+    background-color: transparent;
+    padding: 15px;
+    border: 3px solid #24ff0c;
+    border-radius: 40px;
+    height: 30px;
+    width: 20em;    
+    margin:20px 20px;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Eliminar controles de número en Firefox */
+input[type=number] {
+    -webkit-moz-appearance: textfield;
+}
+.input-transparent:focus{
+    border: 3px solid #24ff0c;
+}
+.input{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display: flex;
+    position: relative;
+    top: 100px;
+    right: 500px;
+    background: #24ff0c;
+    color: #041329;
+    width: 25em;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: none;
+    margin:20px 0;
+}
+.button h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.display{
+    display: flex;
+    position: relative;
+    top: 200px;
+    right: 900px;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 200px;
+    border: 3px solid;
+    border-radius: 40px;
+}
